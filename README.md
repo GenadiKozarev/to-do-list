@@ -10,7 +10,7 @@ Create a new directory with your project name, e.g:
 
 
 ```bash
-mkdir academyProject
+mkdir newProject
 ```
 
 Once inside the new directory, clone this repo:
