@@ -16,7 +16,7 @@ mkdir newProject
 Once inside the new directory, clone this repo:
 
 ```bash
-git clone git@github.com:Mayden-Academy/slim4-skeleton.git .
+git@github.com:GenadiKozarev/to-do-list.git .
 ```
 
 One cloned, you must install the slim components by running:
