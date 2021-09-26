@@ -8,6 +8,7 @@ use Monolog\Processor\UidProcessor;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use Slim\Views\PhpRenderer;
+use App\Models\TaskModel;
 
 return function (ContainerBuilder $containerBuilder) {
     $container = [];
@@ -31,6 +32,12 @@ return function (ContainerBuilder $containerBuilder) {
         $settings = $c->get('settings')['renderer'];
         $renderer = new PhpRenderer($settings['template_path']);
         return $renderer;
+    };
+
+    $container['taskModel'] = function (ContainerInterface $c) {
+        $db = new PDO('mysql:host=127.0.0.1;dbname=to-do-app', 'root', 'password');
+        $db->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+        return new TaskModel($db);
     };
 
     $containerBuilder->addDefinitions($container);
