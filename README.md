@@ -37,7 +37,8 @@ composer test
 
 ## Setup MySQL database
 
-Create a new database called "to-do-app" and a table named "tasks". The table should have a VARCHAR entity 'title' and a TINYINT entity 'completed'.
+Create a new database called "to-do-app" and a table named "tasks".
+The table should have a VARCHAR entity 'title' and a TINYINT entity 'completed'.
 
 Visit http://localhost:8080/ and start adding tasks in your brand new To-Do-List
 
