@@ -10,13 +10,13 @@ Create a new directory with your project name, e.g:
 
 
 ```bash
-mkdir academyProject
+mkdir newProject
 ```
 
 Once inside the new directory, clone this repo:
 
 ```bash
-git clone git@github.com:Mayden-Academy/slim4-skeleton.git .
+git@github.com:GenadiKozarev/to-do-list.git .
 ```
 
 One cloned, you must install the slim components by running:
@@ -35,4 +35,12 @@ Run this command in the application directory to run the test suite
 composer test
 ```
 
-That's it! Now go build something cool.
+## Setup MySQL database
+
+Create a new database called "to-do-app" and a table named "tasks".
+
+The table should have a VARCHAR entity 'title' and a TINYINT entity 'completed'.
+
+Visit http://localhost:8080/ and start adding tasks in your brand new To-Do-List
+
+Enjoy!
